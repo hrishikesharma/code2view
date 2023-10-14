@@ -1,8 +1,8 @@
-# HTML Compiler and Previewer
+# CODE2VIEW
 
 ## Description
 
-HTML Compiler and Previewer is a web application that allows you to write and compile HTML code in your browser, providing a real-time preview of the rendered output.
+Code2View is a web application that allows you to write and compile HTML code in your browser, providing a real-time preview of the rendered output.
 
 ## Table of Contents
 
