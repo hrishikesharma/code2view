@@ -52,4 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Hrishikesh Sarma
 - Email: hsarma414@gmail.com
-- Project Link: [GitHub](https://github.com/yourusername/your-repo)
+- Project Link: [GitHub](https://github.com/hrishikesharma/code2view)
