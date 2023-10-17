@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiChevronDoubleLeft } from "react-icons/hi2";
 import { MdHome } from "react-icons/md";
+import { FaSearchengin } from "react-icons/fa6"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Logo } from "../assets";
@@ -61,7 +62,11 @@ function Home() {
         {/* Top section */}
         <div className="w-full flex items-center justify-between gap-3">
             {/* Search */}
-            
+            <div>
+                <FaSearchengin className="text-2xl text-primaryText"/>
+                <input type="text" className="flex-1 px-4 py-1 text-xl bg-transparent outline-none border-none text-primaryText
+                placeholder:text-gray-600" placeholder="Search here..." />
+            </div>
 
             {/* Profile section */}
         </div>
