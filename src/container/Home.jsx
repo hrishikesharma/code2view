@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Link, Route, Routes } from "react-router-dom";
 import { Logo } from "../assets";
 import {Projects, SignUp} from '../container'
+import { UserAuthInput } from "../components";
 
 function Home() {
   const [isSideMenu, setIsSideMenu] = useState(false);
