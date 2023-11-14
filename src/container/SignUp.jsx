@@ -5,6 +5,7 @@ import { FaEnvelope, FaGithub } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { MdPassword } from "react-icons/md";
 import { motion } from "framer-motion";
+import { signInWithGoogle } from "../utils/helpers";
 
 function SignUp() {
   const [Email, setEmail] = useState("");
@@ -56,7 +57,7 @@ function SignUp() {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center w-full py-3 rounded-xl hover:bg-emerald-400 cursor-pointer bg-emerald-500"
             >
-              <p className="text-xl text-white">Sign Up</p>
+              <p className="text-lg text-white">Sign Up</p>
             </motion.div>
           ) : (
             <motion.div
@@ -101,14 +102,14 @@ function SignUp() {
 
           {/* sign in with google */}
 
-          <motion.div
+          <motion.div onClick={signInWithGoogle}
             className="flex items-center justify-center gap-3
           bg-[rgb(256,256,256,0.2)] backdrop-blur-md w-full py-3 rounded-xl
           hover:bg-[rgb(256,256,256,0.4)] cursor-pointer"
             whileTap={{ scale: 0.9 }}
           >
             <FcGoogle className="text-3xl" />
-            <p className="text-xl text-white">Sign in with Google</p>
+            <p className="text-lg text-white">Sign in with Google</p>
           </motion.div>
 
           {/* or section */}
@@ -128,7 +129,7 @@ function SignUp() {
             whileTap={{ scale: 0.9 }}
           >
             <FaGithub className="text-3xl text-white" />
-            <p className="text-xl text-white">Sign in with GitHub</p>
+            <p className="text-lg text-white">Sign in with GitHub</p>
           </motion.div>
         </div>
       </div>

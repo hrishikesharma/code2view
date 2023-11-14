@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiChevronDoubleLeft } from "react-icons/hi2";
+import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi2";
 import { MdHome } from "react-icons/md";
 import { FaSearchengin } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -25,7 +25,11 @@ function Home() {
           className="w-8 h-8 bg-secondary rounded-tr-lg rounded-br-lg 
           absolute -right-6 flex items-center justify-center cursor-pointer"
         >
-          <HiChevronDoubleLeft className="text-white text-xl" />
+          {isSideMenu ? (
+            <HiChevronDoubleRight className="text-white text-xl" />
+          ) : (
+            <HiChevronDoubleLeft className="text-white text-xl" />
+          )}
         </motion.div>
 
         <div className="overflow-hidden w-full flex flex-col gap-4">
@@ -101,8 +105,8 @@ function Home() {
         {/* bottom section */}
         <div className="w-full">
           <Routes>
-              <Route path="/*" element={<Projects />} />
-              <Route path="/auth" element={<SignUp />} />
+            <Route path="/*" element={<Projects />} />
+            <Route path="/auth" element={<SignUp />} />
           </Routes>
         </div>
       </div>
